@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="WEB" bpmnAble="false" formTarget="" functionCategory="" linkHelp="" multilayer="false" resourceType="JS" ruleDescription="LogicaProgWeb" ruleName="LogicaProgWeb" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="467.39999999999884" scrolly="-63.49999999999966" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-350" y="130">
+    <mutation>
+      <arg id="7d6f3a6b" name="entradaUsuario"/>
+    </mutation>
+    <field customattributes="" name="NAME">Executar</field>
+  </block>
+</blockly>
