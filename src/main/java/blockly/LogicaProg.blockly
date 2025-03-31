@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="JAVA" bpmnAble="false" formTarget="" functionCategory="" linkHelp="" multilayer="false" resourceType="JAVA" ruleDescription="LogicaProg" ruleName="LogicaProg" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="0.8333333333333334" scrollx="43.33331680297874" scrolly="-126.25" target="OWw93QL:eK`wz[DL0v7/"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-183" y="13">
+    <mutation>
+      <arg id="f8cb613c" name="valorEntrada"/>
+    </mutation>
+    <field customattributes="" name="NAME">Executar</field>
+    <value name="RETURN">
+      <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Mhh{PibT(NjW/jAD3}ZG" origintype="text_join" output="true" score="9007199254740991" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join" valueconstant="">
+        <mutation items="2"/>
+        <value name="ADD0">
+          <block asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="iF2]6a5s0AB-YqE~C9WU" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+            <field customattributes="" name="TEXT">A resposta é: </field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block asynccall="false" colour="#fca03b" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="VS1O,P=[}bTug@|PrwJ+" origintype="procedures_callreturn" output="true" score="9007199254740991" tooltip="Executa a função definida pelo usuário &quot;validPalindrome&quot; e usa seu retorno." type="procedures_callreturn" valueconstant="">
+            <mutation name="validPalindrome" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="frase"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="_5JSwQZEzYfrTFI{SNzF" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">valorEntrada</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="OWw93QL:eK`wz[DL0v7/" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-1" y="183">
+    <mutation>
+      <arg id="ae4985b1" name="frase"/>
+    </mutation>
+    <field customattributes="" name="NAME">validPalindrome</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#000000" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="51aX3MM-*xf7.bnPdW}~" multilayer="false" namespace="cronapi.organizers.Operations.comment" origintype="util_comment" output="false" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EComent%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EAdiciona%20um%20bloco%20de%20coment%C3%A1rio%20no%20c%C3%B3digo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.organizers.Operations.comment','cronapi.organizers.Operations.comment')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="util_comment" valueconstant="">
+        <mutation name="{{cronapi.organizers.Operations.comment}}" value="Essa função checa se uma frase é um palindromo"/>
+        <field customattributes="" name="COLOR">#000000</field>
+        <next>
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="uI=M{``-VyEUBnNU8/-1" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+            <field customattributes="" name="VAR">fim</field>
+            <value name="VALUE">
+              <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="6~Gp9o`:Ltgblp{.@i95" origintype="text_length" output="true" score="9007199254740991" tooltip="Retorna o número de letras (incluindo espaços) no texto fornecido." type="text_length" valueconstant="">
+                <value name="VALUE">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="U*U|T`z``Z?;w-/uC[xq" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                    <field customattributes="" name="TEXT">abc</field>
+                  </shadow>
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="O$({.mcm6r2NCCb4S-{+" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">frase</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="$a#:gzOsX~~0z6~kTkPG" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                <field customattributes="" name="VAR">comeco</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="3qe0{svGd2tqyUj}{CH)" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                    <field customattributes="" name="NUM">1</field>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#5ba55b" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id=")aa2u_UNnFw5|D5XjFwi" origintype="controls_whileUntil" output="false" score="9007199254740991" tooltip="function () { [native code] }" type="controls_whileUntil" valueconstant="">
+                    <field customattributes="" name="MODE">WHILE</field>
+                    <value name="BOOL">
+                      <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="wuinV`d@~Y[#Ss-BD@yG" origintype="logic_compare" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="logic_compare" valueconstant="">
+                        <field customattributes="" name="OP">LTE</field>
+                        <value name="A">
+                          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="kpLB}J~8S-Z%Ol60prMP" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                            <field customattributes="" name="VAR">comeco</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="PHkW@yLnCuSQ6!nn:/*q" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                            <field customattributes="" name="VAR">fim</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="%g9j-8Hs8)maC472Wt{x" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                        <field customattributes="" name="VAR">caractereComeco</field>
+                        <value name="VALUE">
+                          <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="MJb~pYQ@-L?T3ur.-(.J" origintype="text_charAt" output="true" score="9007199254740991" tooltip="function(){var where=thisBlock.getFieldValue(&quot;WHERE&quot;),tooltip=Blockly.Msg.TEXT_CHARAT_TOOLTIP;if(&quot;FROM_START&quot;==where||&quot;FROM_END&quot;==where){var msg=&quot;FROM_START&quot;==where?Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP:Blockly.Msg.LISTS_INDEX_FROM_END_TOOLTIP;tooltip+=&quot;  &quot;+msg.replace(&quot;%1&quot;,thisBlock.workspace.options.oneBasedIndex?&quot;#1&quot;:&quot;#0&quot;)}return tooltip}" type="text_charAt" valueconstant="">
+                            <mutation at="true"/>
+                            <field customattributes="" name="WHERE">FROM_START</field>
+                            <value name="VALUE">
+                              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="7J8S)uEo`^|XQA3^h[oX" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                <field customattributes="" name="VAR">frase</field>
+                              </block>
+                            </value>
+                            <value name="AT">
+                              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="UE6o!_W.*,h9g)_,n.4#" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                <field customattributes="" name="VAR">comeco</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="]FydMaFy%cnl[ibP$xmm" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                            <field customattributes="" name="VAR">caractereFim</field>
+                            <value name="VALUE">
+                              <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="bsY)?8|dozqi%?_/gfO/" origintype="text_charAt" output="true" score="9007199254740991" tooltip="function(){var where=thisBlock.getFieldValue(&quot;WHERE&quot;),tooltip=Blockly.Msg.TEXT_CHARAT_TOOLTIP;if(&quot;FROM_START&quot;==where||&quot;FROM_END&quot;==where){var msg=&quot;FROM_START&quot;==where?Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP:Blockly.Msg.LISTS_INDEX_FROM_END_TOOLTIP;tooltip+=&quot;  &quot;+msg.replace(&quot;%1&quot;,thisBlock.workspace.options.oneBasedIndex?&quot;#1&quot;:&quot;#0&quot;)}return tooltip}" type="text_charAt" valueconstant="">
+                                <mutation at="true"/>
+                                <field customattributes="" name="WHERE">FROM_START</field>
+                                <value name="VALUE">
+                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="DI:T.(3)fo|Q)gs+NS,J" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                    <field customattributes="" name="VAR">frase</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="ZXl[6SnzYt4CL6y|Q:[z" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                    <field customattributes="" name="VAR">fim</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="J~b~bZ;%2|s*-aEVKRHg" origintype="text_print" output="false" score="9007199254740991" tooltip="Imprime o texto, número ou valor especificado." type="text_print" valueconstant="">
+                                <value name="TEXT">
+                                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="NPk{87OKThoX6X|O/9pA" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                    <field customattributes="" name="TEXT">abc</field>
+                                  </shadow>
+                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="ZSp]X.8VVD*t33H50yc^" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                    <field customattributes="" name="VAR">caractereComeco</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="vXC3s:@}L(VGI-y9l$}V" origintype="text_print" output="false" score="9007199254740991" tooltip="Imprime o texto, número ou valor especificado." type="text_print" valueconstant="">
+                                    <value name="TEXT">
+                                      <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="[%~!1Rcoj)QvWu%,$(`B" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                        <field customattributes="" name="TEXT">abc</field>
+                                      </shadow>
+                                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id=",{85ML7=KtT{%=NwH9Ul" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                        <field customattributes="" name="VAR">comeco</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="K;}3I~q1X`4e;LZikokI" origintype="text_print" output="false" score="9007199254740991" tooltip="Imprime o texto, número ou valor especificado." type="text_print" valueconstant="">
+                                        <value name="TEXT">
+                                          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="[%~!1Rcoj)QvWu%,$(`B" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                            <field customattributes="" name="TEXT">abc</field>
+                                          </shadow>
+                                          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="jw5@(=;PcozR+P/Tb#uR" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                            <field customattributes="" name="VAR">caractereFim</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="b??20?Fv1K6WRjY%?yqN" origintype="text_print" output="false" score="9007199254740991" tooltip="Imprime o texto, número ou valor especificado." type="text_print" valueconstant="">
+                                            <value name="TEXT">
+                                              <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="[%~!1Rcoj)QvWu%,$(`B" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                                <field customattributes="" name="TEXT">abc</field>
+                                              </shadow>
+                                              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="`=2V%OmttB3DZT)UDBG2" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                <field customattributes="" name="VAR">fim</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block asynccall="false" colour="#ff9900" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="W9zXHi%z}pUsr)zq$z~t" multilayer="false" namespace="cronapi.organizers.Operations.group" origintype="util_container" output="false" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EGrupo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EAdiciona%20um%20bloco%20agrupador%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.organizers.Operations.group','cronapi.organizers.Operations.group')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="util_container" valueconstant="">
+                                                <field customattributes="" name="GROUP_NAME">Checar se é caractere ou digito</field>
+                                                <field customattributes="" name="COLOR">#ff9900</field>
+                                                <statement name="GROUP">
+                                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="+/E)q0Oz2e`fpS4S$B_e" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                                                    <field customattributes="" name="VAR">letrasDigitos</field>
+                                                    <value name="VALUE">
+                                                      <block asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="Bc#a3]~(Z#t}x4rbIQjE" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                                        <field customattributes="" name="TEXT">abcdefghijklmnopqrstuvwxyz0123456789</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="SbV~FW~={L7BZPb,}9P5" origintype="controls_if" output="false" score="9007199254740991" tooltip="function () { [native code] }" type="controls_if" valueconstant="">
+                                                        <mutation else="1" elseif="1"/>
+                                                        <value name="IF0">
+                                                          <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="fl..Nu;|#^*5N)6|f6Cb" origintype="logic_compare" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="logic_compare" valueconstant="">
+                                                            <field customattributes="" name="OP">GT</field>
+                                                            <value name="A">
+                                                              <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="]}RR(D%~-b2y.uIS$D5I" origintype="text_indexOf" output="true" score="9007199254740991" tooltip="function(){return Blockly.Msg.TEXT_INDEXOF_TOOLTIP.replace(&quot;%1&quot;,thisBlock.workspace.options.oneBasedIndex?&quot;0&quot;:&quot;-1&quot;)}" type="text_indexOf" valueconstant="">
+                                                                <field customattributes="" name="END">FIRST</field>
+                                                                <value name="VALUE">
+                                                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="r()X*3ZhJ`SD}=^N8ZTN" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                    <field customattributes="" name="VAR">letrasDigitos</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="FIND">
+                                                                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id=".-:~Xzn%CrM:pd*2Cf{Y" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                                                    <field customattributes="" name="TEXT">.</field>
+                                                                  </shadow>
+                                                                  <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="Sl{*U.FAQr.nEjgcgV3," origintype="text_changeCase" output="true" score="9007199254740991" tooltip="Retorna uma cópia do texto em um formato diferente." type="text_changeCase" valueconstant="">
+                                                                    <field customattributes="" name="CASE">LOWERCASE</field>
+                                                                    <value name="TEXT">
+                                                                      <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="QG1nUSLvZNm-BXmX*xQi" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                                                        <field customattributes="" name="TEXT">abc</field>
+                                                                      </shadow>
+                                                                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="T,AH|MU6H,(jdunL1S_Z" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                        <field customattributes="" name="VAR">caractereComeco</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="5ZWDyBDk_s+)k!(_iTit" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                                                                <field customattributes="" name="NUM">0</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="FK%CoNQVZUg*dY;|Byj:" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                                                            <field customattributes="" name="VAR">comeco</field>
+                                                            <value name="VALUE">
+                                                              <block asynccall="false" colour="#5b6da5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="n]_!3j*q2a$?ac[zVV%8" origintype="math_arithmetic" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_arithmetic" valueconstant="">
+                                                                <mutation items="2"/>
+                                                                <field customattributes="" name="OP1">ADD</field>
+                                                                <value name="ARG0">
+                                                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="!tu!XxmMiJT,!Z~A|iIA" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                    <field customattributes="" name="VAR">comeco</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG1">
+                                                                  <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="0oNw#b?G.l:fkp_#;5MY" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                                                                    <field customattributes="" name="NUM">1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                        <value name="IF1">
+                                                          <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="0HiA?}`[5*I~4Q`u,wpD" origintype="logic_compare" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="logic_compare" valueconstant="">
+                                                            <field customattributes="" name="OP">GT</field>
+                                                            <value name="A">
+                                                              <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="CbS4[X2m}IF/;B%xXwrf" origintype="text_indexOf" output="true" score="9007199254740991" tooltip="function(){return Blockly.Msg.TEXT_INDEXOF_TOOLTIP.replace(&quot;%1&quot;,thisBlock.workspace.options.oneBasedIndex?&quot;0&quot;:&quot;-1&quot;)}" type="text_indexOf" valueconstant="">
+                                                                <field customattributes="" name="END">FIRST</field>
+                                                                <value name="VALUE">
+                                                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="9CWB_qG5ZO_v}V}cO.d*" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                    <field customattributes="" name="VAR">letrasDigitos</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="FIND">
+                                                                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id=".-:~Xzn%CrM:pd*2Cf{Y" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                                                    <field customattributes="" name="TEXT">.</field>
+                                                                  </shadow>
+                                                                  <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="EwrJV7TktnvFXBPFi#5t" origintype="text_changeCase" output="true" score="9007199254740991" tooltip="Retorna uma cópia do texto em um formato diferente." type="text_changeCase" valueconstant="">
+                                                                    <field customattributes="" name="CASE">LOWERCASE</field>
+                                                                    <value name="TEXT">
+                                                                      <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="L)`szm@OG2ZPk7$:76Qe" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                                                        <field customattributes="" name="TEXT">abc</field>
+                                                                      </shadow>
+                                                                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="5xX_.]^]L%DDTgSyW$rx" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                        <field customattributes="" name="VAR">caractereFim</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="HbmtGoW8c4e8#.sW`?O^" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                                                                <field customattributes="" name="NUM">0</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO1">
+                                                          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="@e75Z$HWJ}=RJci_5z/o" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                                                            <field customattributes="" name="VAR">fim</field>
+                                                            <value name="VALUE">
+                                                              <block asynccall="false" colour="#5b6da5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="2j34G@yxI;R`[b_5qc~t" origintype="math_arithmetic" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_arithmetic" valueconstant="">
+                                                                <mutation items="2"/>
+                                                                <field customattributes="" name="OP1">MINUS</field>
+                                                                <value name="ARG0">
+                                                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="[mSid:42NUIxoY5GbYp/" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                    <field customattributes="" name="VAR">fim</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG1">
+                                                                  <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="Oh~^]uz`IUU_YuexX}CG" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                                                                    <field customattributes="" name="NUM">1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                        <statement name="ELSE">
+                                                          <block asynccall="false" colour="#fca03b" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="1R[Jq[rafnR1@aU.4%y1" origintype="procedures_ifreturn" output="false" score="9007199254740991" tooltip="Se um valor é verdadeiro, então retorna um valor." type="procedures_ifreturn" valueconstant="">
+                                                            <mutation value="1"/>
+                                                            <value name="CONDITION">
+                                                              <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="}).RzLXUH;PWMQggH8s+" origintype="logic_compare" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="logic_compare" valueconstant="">
+                                                                <field customattributes="" name="OP">NEQ</field>
+                                                                <value name="A">
+                                                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id=",@,Ve23z`T|FDRz7w.`|" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                    <field customattributes="" name="VAR">caractereComeco</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="VTB)|%N2oFYWAbHK/RY9" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                    <field customattributes="" name="VAR">caractereFim</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE">
+                                                              <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="Bj%ml@g9/Ifxdr8}1xT4" origintype="logic_boolean" output="true" score="9007199254740991" tooltip="Retorna verdadeiro ou falso." type="logic_boolean" valueconstant="">
+                                                                <field customattributes="" name="BOOL">FALSE</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="M-a0[u#$HFDVZK*cOT6s" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                                                                <field customattributes="" name="VAR">comeco</field>
+                                                                <value name="VALUE">
+                                                                  <block asynccall="false" colour="#5b6da5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="2jB$l3Nfz?/f{/gQMe)V" origintype="math_arithmetic" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_arithmetic" valueconstant="">
+                                                                    <mutation items="2"/>
+                                                                    <field customattributes="" name="OP1">ADD</field>
+                                                                    <value name="ARG0">
+                                                                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="Dz-=n+]zDG?~A.V1DA4`" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                        <field customattributes="" name="VAR">comeco</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="ARG1">
+                                                                      <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="X[r%mmtnX/z-T(.x5I{v" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                                                                        <field customattributes="" name="NUM">1</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="h3a9i`t_w{ajEsu)1zyt" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                                                                    <field customattributes="" name="VAR">fim</field>
+                                                                    <value name="VALUE">
+                                                                      <block asynccall="false" colour="#5b6da5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="C#:nd:x6Z(rkP]teZ2n*" origintype="math_arithmetic" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_arithmetic" valueconstant="">
+                                                                        <mutation items="2"/>
+                                                                        <field customattributes="" name="OP1">MINUS</field>
+                                                                        <value name="ARG0">
+                                                                          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="m_:JY^XO%EZvyM?LU|9)" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                                                            <field customattributes="" name="VAR">fim</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG1">
+                                                                          <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="hNHcm?(bHQ4w$No]!%t!" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                                                                            <field customattributes="" name="NUM">1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="OWw93QL:eK`wz[DL0v7/" id="tEeDa,d?twl=h:=2BVSH" origintype="logic_boolean" output="true" score="9007199254740991" tooltip="Retorna verdadeiro ou falso." type="logic_boolean" valueconstant="">
+        <field customattributes="" name="BOOL">TRUE</field>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="(Ak0J.3cH.%m+O4-gv./" origintype="procedures_callreturn" output="true" score="9007199254740991" tooltip="Executa a função definida pelo usuário &quot;romanoParaInteiro&quot; e usa seu retorno." type="procedures_callreturn" valueconstant="" x="-97" y="218">
+    <mutation name="romanoParaInteiro" return-raw-type="undefined">
+      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="stringRomano"/>
+    </mutation>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="tj*jkHEo3SN)iZ;+Z5dE" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-67" y="239">
+    <mutation>
+      <arg id="639f8c5d" name="stringRomano"/>
+    </mutation>
+    <field customattributes="" name="NAME">romanoParaInteiro</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="U3U{+r{||j{WxZ[[Bc{x" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+        <field customattributes="" name="VAR">mapaRomano</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#917731" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="o%/XW/LZQ~?cLO~m!CZ]" multilayer="false" namespace="cronapi.map.Operations.createObjectMapWith" origintype="maps_create_with" output="true" returntype="ObjectType.MAP" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Valor(es)%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Valores%20a%20serem%20adicionados%20na%20cria%C3%A7%C3%A3o%20do%20mapa%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.map.Operations.createObjectMapWith','cronapi.map.Operations.createObjectMapWith')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="maps_create_with" valueconstant="">
+            <mutation name="{{cronapi.map.Operations.createObjectMapWith}}">
+              <arg name="I"/>
+              <arg name="V"/>
+              <arg name="X"/>
+              <arg name="L"/>
+              <arg name="C"/>
+              <arg name="D"/>
+              <arg name="M"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="HEV_CPA:,:qfq=iUyOi5" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                <field customattributes="" name="NUM">1</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="QYzRn1[!vz=N:RG_xOZF" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                <field customattributes="" name="NUM">5</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="3Sn$(O^h)!aC9NmH}GSs" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                <field customattributes="" name="NUM">10</field>
+              </block>
+            </value>
+            <value name="ARG3">
+              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id=":rf}^Pky)mj[4ZEm)_s(" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                <field customattributes="" name="NUM">50</field>
+              </block>
+            </value>
+            <value name="ARG4">
+              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="2r{2Tgan/6{s}+/]/$xG" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                <field customattributes="" name="NUM">100</field>
+              </block>
+            </value>
+            <value name="ARG5">
+              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="_Pf-*IxVd7-uL?k4=I7[" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                <field customattributes="" name="NUM">500</field>
+              </block>
+            </value>
+            <value name="ARG6">
+              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="=Q{6E+Ymvplbzhlt;}8m" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                <field customattributes="" name="NUM">1000</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="0.@7-k:UiCL6jdA+BBSu" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+            <field customattributes="" name="VAR">resposta</field>
+            <value name="VALUE">
+              <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="ZR=ViDh526mry[iEj,sx" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                <field customattributes="" name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="%Q+@KE*XibhOb6(2}%mD" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                <field customattributes="" name="VAR">numAnterior</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="`:5e*uzax,Nd{Izz,WTR" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                    <field customattributes="" name="NUM">0</field>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#5ba55b" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="d]U;H=6DpB7Toe`P19Jo" origintype="controls_for" output="false" score="9007199254740991" tooltip="Faça algumas instruções várias vezes." type="controls_for" valueconstant="">
+                    <field customattributes="" name="VAR">i</field>
+                    <value name="FROM">
+                      <shadow asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="SIjLKq$-$dwG@fAC8eFq" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                        <field customattributes="" name="NUM">10</field>
+                      </shadow>
+                      <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="/oEv+F-X9^~3q=4tJYOh" origintype="text_length" output="true" score="9007199254740991" tooltip="Retorna o número de letras (incluindo espaços) no texto fornecido." type="text_length" valueconstant="">
+                        <value name="VALUE">
+                          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="iN`rKi+It_8e:dLo4f:t" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                            <field customattributes="" name="TEXT">abc</field>
+                          </shadow>
+                          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="+8LKB^taOa]2qd!VI5qm" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                            <field customattributes="" name="VAR">stringRomano</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <shadow asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="LMCc[UeIna#;t/ao|W*F" origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                        <field customattributes="" name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="BY">
+                      <shadow asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="|s,Gb95~j{W)/VIq2-O," origintype="math_number" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_number" valueconstant="">
+                        <field customattributes="" name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <statement name="DO">
+                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="RFkZ3*Rn3FNE}v=_ZJe%" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                        <field customattributes="" name="VAR">numAtual</field>
+                        <value name="VALUE">
+                          <block asynccall="false" colour="#917731" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="!0kGagwItG$tQrMrwN^~" multilayer="false" namespace="cronapi.map.Operations.getMapField" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%20mapa%20por%20chave%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20mapa%20atrav%C3%A9s%20da%20chave%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Chave%20:%20Texto%3C/span%3E%3Cdiv%3E%20Chave%20da%20busca%20no%20mapa%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-next.cronapp.io/help?type=blockly&amp;amp;id=cronapi.map.Operations.getMapField','cronapi.map.Operations.getMapField')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
+                            <mutation name="{{cronapi.map.Operations.getMapField}}" return-raw-type="cronapi.Var">
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Mapa"/>
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Chave"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="-[0OWr],c3}lblEcTmV3" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                <field customattributes="" name="VAR">mapaRomano</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="ls-)s??~XO.#oc!0S`zv" origintype="text" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="text" valueconstant="">
+                                <field customattributes="" name="TEXT"/>
+                              </shadow>
+                              <block asynccall="false" colour="#5ba58c" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="cs96JyVqvk3cvQqK.-bX" origintype="text_charAt" output="true" score="9007199254740991" tooltip="function(){var where=thisBlock.getFieldValue(&quot;WHERE&quot;),tooltip=Blockly.Msg.TEXT_CHARAT_TOOLTIP;if(&quot;FROM_START&quot;==where||&quot;FROM_END&quot;==where){var msg=&quot;FROM_START&quot;==where?Blockly.Msg.LISTS_INDEX_FROM_START_TOOLTIP:Blockly.Msg.LISTS_INDEX_FROM_END_TOOLTIP;tooltip+=&quot;  &quot;+msg.replace(&quot;%1&quot;,thisBlock.workspace.options.oneBasedIndex?&quot;#1&quot;:&quot;#0&quot;)}return tooltip}" type="text_charAt" valueconstant="">
+                                <mutation at="true"/>
+                                <field customattributes="" name="WHERE">FROM_START</field>
+                                <value name="VALUE">
+                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="Z-zokC?2~$@Z#Ub-E!gW" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                    <field customattributes="" name="VAR">stringRomano</field>
+                                  </block>
+                                </value>
+                                <value name="AT">
+                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="B=l1Lw}e^%xAJmsT`?_8" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                    <field customattributes="" name="VAR">i</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="sz`cd(MYWM-}][9Y*N.O" origintype="controls_if" output="false" score="9007199254740991" tooltip="function () { [native code] }" type="controls_if" valueconstant="">
+                            <mutation else="1"/>
+                            <value name="IF0">
+                              <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="L#|pUX%lSIRjf^b,{jk," origintype="logic_compare" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="logic_compare" valueconstant="">
+                                <field customattributes="" name="OP">LT</field>
+                                <value name="A">
+                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="R62]+3Zh^pE{RwP$LmBd" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                    <field customattributes="" name="VAR">numAtual</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="]%N/ssp[}K7P2(.Iq]h#" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                    <field customattributes="" name="VAR">numAnterior</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="].}Zd^$3kf8Xg=.5O;K," origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                                <field customattributes="" name="VAR">resposta</field>
+                                <value name="VALUE">
+                                  <block asynccall="false" colour="#5b6da5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="bT6^52y/a;GmVkF%an]Z" origintype="math_arithmetic" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_arithmetic" valueconstant="">
+                                    <mutation items="2"/>
+                                    <field customattributes="" name="OP1">MINUS</field>
+                                    <value name="ARG0">
+                                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="EkLv;8W,mS1vF}mq$mr4" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                        <field customattributes="" name="VAR">resposta</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="~~%?I7L[0Xt,0gfjhg?T" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                        <field customattributes="" name="VAR">numAtual</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <statement name="ELSE">
+                              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="vQ$BBVtpzjaU]K2%kKZF" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                                <field customattributes="" name="VAR">resposta</field>
+                                <value name="VALUE">
+                                  <block asynccall="false" colour="#5b6da5" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="$nMr!@rjPyRd`K|Sf|lA" origintype="math_arithmetic" output="true" score="9007199254740991" tooltip="function () { [native code] }" type="math_arithmetic" valueconstant="">
+                                    <mutation items="2"/>
+                                    <field customattributes="" name="OP1">ADD</field>
+                                    <value name="ARG0">
+                                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="GSwx9`P,28NEQje+O2FO" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                        <field customattributes="" name="VAR">resposta</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="(y+%}MZb$W%tMplV,Zln" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                        <field customattributes="" name="VAR">numAtual</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="04jsQHeUd!G_0x(XgvMZ" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                                <field customattributes="" name="VAR">numAnterior</field>
+                                <value name="VALUE">
+                                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="3lidoNx4OB|u{t%B34Gd" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                                    <field customattributes="" name="VAR">numAtual</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="tj*jkHEo3SN)iZ;+Z5dE" id="UV;HFQ(6VSdcOeNXrs0A" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+        <field customattributes="" name="VAR">resposta</field>
+      </block>
+    </value>
+  </block>
+</blockly>
